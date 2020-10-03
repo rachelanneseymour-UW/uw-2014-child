@@ -1,0 +1,17 @@
+/*
+ Theme Name:   UW 2014 Child
+ Theme URI:    http://example.com/none/
+ Description:  UW 2014 Child Theme
+ Author:       Rachel Seymour
+ Author URI:   http://example.com
+ Template:     uw-2014-master
+ Version:      0.1.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         none
+ Text Domain:  uw-2014-child
+*/
+
+.js-colored-accordion__panel {
+  background-color: purple;
+}
