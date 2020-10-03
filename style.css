@@ -12,6 +12,96 @@
  Text Domain:  uw-2014-child
 */
 
-.js-colored-accordion__panel {
-  background-color: purple;
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@600&display=swap');
+
+.uw-thinstrip {
+  height: 60px;
+}
+
+.uw-thinstrip .hprc-wordmark {
+  display: block;
+  position: absolute;
+  top: 7px;
+  left: 80px;
+  width: 65%;
+  height: 24px;
+  color: #ffffff;
+  font-family: "Encode Sans", "Open Sans", "Arial", sans-serif, "Arial", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.uw-thinstrip .hprc-wordmark span {
+  display: none;
+  font-size: 12px;
+}
+
+.uw-thinstrip .hprc-wordmark:hover {
+  color: #b7a57a;
+}
+
+.uw-thinstrip .uw-patch {
+  top: 5px;
+}
+
+.uw-thinstrip button.uw-search {
+  top: 7px;
+  right: 0;
+  margin-right: 0;
+}
+
+/* CSS for larger screens */
+
+@media (min-width: 768px) {
+  .uw-thinstrip {
+    height: 140px;
+  }
+  .uw-thinstrip .hprc-wordmark {
+    font-size: 29px;
+    line-height: 30px;
+    top: -5px;
+    left: 150px;
+    width: 75%;
+    z-index: 20;
+  }
+  .uw-thinstrip .hprc-wordmark span {
+    display: block;
+    font-size: 18px;
+  }
+  .uw-thinstrip .uw-patch {
+    top: -22px;
+  }
+  .uw-thinstrip button.uw-search {
+    right: 0;
+    margin: 0 15px;
+  }
+  .uw-thinstrip div.align-right #search-quicklinks {
+    right: -150px;
+    top: 15px;
+  }
+  #mobile-relative {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .uw-thinstrip {
+    height: 90px;
+  }
+  .uw-thinstrip ul.uw-thin-links {
+    margin-top: 18px;
+  }
+  .uw-thinstrip div.align-right #search-quicklinks {
+    right: 0;
+    top: 0;
+  }
+}
+
+@media (min-width: 1400px) {
+  .uw-thinstrip ul.uw-thin-links {
+    margin-top: 0;
+  }
 }
