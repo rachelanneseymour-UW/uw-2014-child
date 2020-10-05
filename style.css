@@ -13,7 +13,6 @@
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@600&display=swap');
-
 .uw-thinstrip {
   height: 60px;
 }
@@ -108,9 +107,103 @@
   }
 }
 
-
 @media (min-width: 1400px) {
   .uw-thinstrip ul.uw-thin-links {
     margin-top: 0;
   }
+}
+
+/* CSS for tiles on homepage */
+
+.tile-group {
+  padding: 3rem 0 5rem 0;
+  background-color: #e8e3d3;
+}
+
+.tile-group h2 {
+  display: block;
+  text-align: center;
+  margin: 0 auto 3rem auto;
+  color: #4b2e83;
+}
+
+.tiles {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.tiles [class*='col-'] {
+  margin: 0 -1px 30px -1px;
+}
+
+.tiles [class*='col-'] a {
+  text-decoration: none;
+}
+
+.tiles [class*='col-'] .tile {
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+  -webkit-transition: box-shadow .1s ease, -webkit-transform .1s ease;
+  transition: box-shadow .1s ease, -webkit-transform .1s ease;
+  transition: box-shadow .1s ease, transform .1s ease;
+  transition: box-shadow .1s ease, transform .1s ease, -webkit-transform .1s ease;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1, 1);
+  transform: translateZ(0);
+}
+
+.tiles [class*='col-'] .tile .tile-text-wrap {
+  padding: 30px;
+}
+
+.tiles [class*='col-'] .tile .tile-text-wrap .title {
+  color: #4b2e83;
+  font-family: "Encode Sans Compressed", "Open Sans", "Arial", sans-serif, "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 5px;
+}
+
+.tiles [class*='col-'] .tile .tile-text-wrap .category {
+  margin-bottom: 5px;
+  color: #4b2e83;
+}
+
+.tiles [class*='col-'] .tile .tile-text-wrap .body-text p, .tiles [class*='col-'] .tile .tile-text-wrap .body-text ul li {
+  margin-bottom: 3rem;
+  color: #000000;
+  font-size: 14px;
+  line-height: 1.42857;
+}
+
+.tiles [class*='col-'] .tile .tile-text-wrap .body-text p a, .tiles [class*='col-'] .tile .tile-text-wrap .body-text ul li a {
+  color: #4b2e83;
+}
+
+.tiles [class*='col-'] .tile .tile-text-wrap .link {
+  text-transform: uppercase;
+  font-family: "Encode Sans Compressed", "Open Sans", "Arial", sans-serif, "Arial", sans-serif;
+  font-weight: 600;
+  color: #4b2e83;
+}
+
+.tiles [class*='col-'] .tile .tile-text-wrap .link:hover {
+  color: #85754d;
+  text-decoration: none;
+}
+
+.tiles [class*='col-'] .tile .tile-text-wrap .link:after {
+  content: " \00BB";
+}
+
+.tiles [class*='col-'] .tile:hover {
+  box-shadow: 0 1px 3px 0 #bcbdbd, 0 0 0 1px #d4d4d5;
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
 }
