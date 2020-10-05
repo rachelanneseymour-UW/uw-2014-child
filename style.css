@@ -53,15 +53,13 @@
   margin-right: 0;
 }
 
-/* CSS for larger screens */
-
 @media (min-width: 768px) {
   .uw-thinstrip {
     height: 140px;
   }
   .uw-thinstrip .hprc-wordmark {
-    font-size: 29px;
-    line-height: 30px;
+    font-size: 25px;
+    line-height: 26px;
     top: -5px;
     left: 150px;
     width: 75%;
@@ -85,11 +83,21 @@
   #mobile-relative {
     display: none;
   }
+  .uw-thinstrip ul.uw-thin-links {
+    margin-top: -20px;
+  }
+  .uw-thinstrip div.align-right #search-quicklinks {
+    top: -4px;
+  }
 }
 
 @media (min-width: 992px) {
   .uw-thinstrip {
     height: 90px;
+  }
+  .uw-thinstrip .hprc-wordmark {
+    font-size: 29px;
+    line-height: 30px;
   }
   .uw-thinstrip ul.uw-thin-links {
     margin-top: 18px;
@@ -99,6 +107,7 @@
     top: 0;
   }
 }
+
 
 @media (min-width: 1400px) {
   .uw-thinstrip ul.uw-thin-links {
