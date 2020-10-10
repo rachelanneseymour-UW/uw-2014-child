@@ -54,6 +54,13 @@
   margin-right: 0;
 }
 
+@media (max-width: 768px) {
+  .uw-thinstrip .uw-patch {
+    height: 60px;
+    background-size: 510px;
+  }  
+}
+
 @media (min-width: 768px) {
   .uw-thinstrip {
     height: 140px;
