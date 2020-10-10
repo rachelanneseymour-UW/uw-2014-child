@@ -12,11 +12,13 @@
  Text Domain:  uw-2014-child
 */
 
+/* import front for header */
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@600&display=swap');
 .uw-thinstrip {
   height: 60px;
 }
 
+/*********************** CSS for header *****************************************/
 .uw-thinstrip .hprc-wordmark {
   display: block;
   position: absolute;
@@ -113,7 +115,7 @@
   }
 }
 
-/* CSS for tiles on homepage */
+/********************** CSS for tiles on homepage *********************************/
 
 .tile-group {
   padding: 3rem 0 5rem 0;
@@ -206,4 +208,14 @@
   box-shadow: 0 1px 3px 0 #bcbdbd, 0 0 0 1px #d4d4d5;
   -webkit-transform: translateY(-3px);
   transform: translateY(-3px);
+}
+
+/********************************* Fix hero image title cutoff ******************************/
+/* use two classes to make sure we win */
+.page .uw-hero-image {
+  height: auto;
+}
+
+.page .hero-height2 {
+  height: auto;
 }

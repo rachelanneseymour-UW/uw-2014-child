@@ -80,7 +80,7 @@
 </div>
 
 <div class="tile-group">
-  <h2>Stories &amp; Updates</h2>
+  <h2>News &amp; Updates</h2>
   <div class="container">
     <div class="tiles row">
 

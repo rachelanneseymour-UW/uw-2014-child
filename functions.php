@@ -1,5 +1,7 @@
 <?php
 
+require_once(get_stylesheet_directory() . '/setup/class.hprc-page-attributes-meta-box.php' );
+
 // a copy of uw_breadcrumbs that omits the category link and links back to the posts page from a single post 
 // (why doesn't the original have an option for this?) 
 if ( ! function_exists('get_uw_breadcrumbs') ) :

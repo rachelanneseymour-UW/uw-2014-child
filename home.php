@@ -1,6 +1,6 @@
 <?php if(function_exists('get_header')) { get_header(); } ?>
 
-<h1 class="container uw-site-title-blank">Our Blog: Stories & Updates</h1>
+<h1 class="container uw-site-title-blank">Our Blog: News & Updates</h1>
 <div class="container uw-body">
 
   <div class="row">
