@@ -4,6 +4,8 @@ require_once(get_stylesheet_directory() . '/setup/class.hprc-page-attributes-met
 
 // a copy of uw_breadcrumbs that omits the category link and links back to the posts page from a single post 
 // (why doesn't the original have an option for this?) 
+
+// also makes 'home' nav item the HPRC homepage
 if ( ! function_exists('get_uw_breadcrumbs') ) :
 
   function get_uw_breadcrumbs()
@@ -11,8 +13,8 @@ if ( ! function_exists('get_uw_breadcrumbs') ) :
 
     global $post;
     $ancestors = array_reverse( get_post_ancestors( $post ) );
-    $html = '<li><a href="http://uw.edu" title="University of Washington">Home</a></li>';
-    $html .= '<li' . (is_front_page() ? ' class="current"' : '') . '><a href="' . home_url('/') . '" title="' . get_bloginfo('title') . '">' . get_bloginfo('title') . '</a><li>';
+    //$html = '<li><a href="http://uw.edu" title="University of Washington">Home</a></li>';
+    $html = '<li' . (is_front_page() ? ' class="current"' : '') . '><a href="' . home_url('/') . '" title="' . get_bloginfo('title') . '">' . get_bloginfo('title') . '</a><li>';
 
     if ( is_404() )
     {
