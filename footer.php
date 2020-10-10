@@ -11,8 +11,8 @@
 
 <nav aria-label="footer navigation">
     <ul class="footer-links">
-        <li><a href="">Intranet</a></li>
-        <li><a href="">Contact Us</a></li>
+        <li><a href="/hprc/intranet/">Intranet</a></li>
+        <li><a href="/hprc/about/contact-us/">Contact Us</a></li>
         <li><a href="http://www.washington.edu/online/privacy/">Privacy</a></li>
         <li><a href="http://www.washington.edu/online/terms/">Terms</a></li>
     </ul>
