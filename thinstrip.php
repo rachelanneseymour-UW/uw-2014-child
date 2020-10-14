@@ -2,7 +2,7 @@
 
   <div class="container">
     <a href="http://uw.edu" title="University of Washington Home" class="uw-patch">University of Washington</a>
-    <a href="/hprc2021/" class="hprc-wordmark" style="width: auto;">Health Promotion Research Center<br><span>University of Washtington</span></a>
+    <a href="/hprc/" class="hprc-wordmark" style="width: auto;">Health Promotion Research Center<br><span>University of Washington</span></a>
   </div>
   <div class='align-right'>
       <nav class="uw-thin-strip-nav" aria-label='audience menu'>

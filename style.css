@@ -12,7 +12,12 @@
  Text Domain:  uw-2014-child
 */
 
-/* import front for header */
+/* Prevent headers from being all caps */
+#uw-container .hero-height2 h1, #uw-container #hero-container .uw-site-title {
+  text-transform: none;
+}
+
+/* import font for header */
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@600&display=swap');
 .uw-thinstrip {
   height: 60px;
