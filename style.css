@@ -246,3 +246,8 @@
 .page .hero-height2 {
   height: auto;
 }
+
+/******************************* Allow breadcrumb items to wrap ****************************/
+.uw-breadcrumbs a, .uw-breadcrumbs span {
+  white-space: normal;
+}
