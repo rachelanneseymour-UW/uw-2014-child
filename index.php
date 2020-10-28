@@ -1,5 +1,8 @@
 <?php if(function_exists('get_header')) { get_header(); } ?>
 
+<div class="uw-hero-image hero-blank">
+	<h1 class="container uw-site-title-blank hprc-blog-page">&nbsp;</h1>
+</div>
 
 <div class="container uw-body">
 

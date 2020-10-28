@@ -17,6 +17,17 @@
   text-transform: none;
 }
 
+/* Special spacing for mobile clients of blog page so they can see menu */
+.uw-site-title-blank.hprc-blog-page {
+  height: 10px;
+}
+
+@media (max-width: 767px) {
+  .uw-site-title-blank.hprc-blog-page {
+    height: auto;
+  }
+}
+
 /* import font for header */
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@600&display=swap');
 .uw-thinstrip {
@@ -63,7 +74,11 @@
   .uw-thinstrip .uw-patch {
     height: 60px;
     background-size: 510px;
-  }  
+  }
+
+  .uw-hero-image.hero-blank .uw-site-title-blank {
+    font-size: 25px;
+  }
 }
 
 @media (min-width: 768px) {
