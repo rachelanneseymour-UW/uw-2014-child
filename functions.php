@@ -2,6 +2,20 @@
 
 require_once(get_stylesheet_directory() . '/setup/class.hprc-page-attributes-meta-box.php' );
 
+// set up a sidebar that is used only for the blog pages
+function uw_2014_child_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Blog sidebar',
+    'id'            => 'uw_child_blog_sidebar',
+    'description'   => 'Right column widgets for blog pages',
+		'before_widget' => '<div role="navigation" aria-label="sidebar_navigation" id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+	));
+
+}
+add_action( 'widgets_init', 'uw_2014_child_widgets_init' );
+
 // a copy of uw_breadcrumbs that omits the category link and links back to the posts page from a single post 
 // (why doesn't the original have an option for this?) 
 

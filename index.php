@@ -1,3 +1,4 @@
+<!-- This page is used to display individual blog posts -->
 <?php if(function_exists('get_header')) { get_header(); } ?>
 
 <div class="uw-hero-image hero-blank">
@@ -41,14 +42,13 @@
 
     </div>
 
-    <?php get_sidebar() ?>
+		<div class="col-md-4 uw-sidebar">
+			<?php dynamic_sidebar( 'uw_child_blog_sidebar' ); ?>
+		</div>
+    <?php //get_sidebar() ?>
 
   </div>
 
-</div>
-
-<div class='test'>
-<?php get_the_tag_list( '', ',' ); ?>
 </div>
 
 <?php get_footer(); ?>

@@ -1,3 +1,4 @@
+<!-- This page is used to render the blog categories page (/categories) -->
 <?php if(function_exists('get_header')) { get_header(); } ?>
 
 
@@ -12,7 +13,6 @@
       <?php get_template_part( 'breadcrumbs' ); ?>
 
       <div id='main_content' class="uw-body-copy" tabindex="-1">
-
   			<?php
   				// Start the Loop.
   				while ( have_posts() ) : the_post();

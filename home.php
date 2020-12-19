@@ -1,3 +1,4 @@
+<!-- This page is used to render the list of articles for the blog -->
 <?php if(function_exists('get_header')) { get_header(); } ?>
 
 <div class="uw-hero-image hero-blank">
@@ -41,7 +42,10 @@
 
     </div>
 
-    <?php get_sidebar() ?>
+		<div class="col-md-4 uw-sidebar">
+			<?php dynamic_sidebar( 'uw_child_blog_sidebar' ); ?>
+		</div>
+    <?php // get_sidebar() ?>
 
   </div>
 
