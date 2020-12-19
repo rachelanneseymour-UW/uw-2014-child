@@ -83,7 +83,7 @@ if ( ! function_exists('get_uw_breadcrumbs') ) :
 
       if ( is_single() )
       {
-        $html .=  '<li><a href="' . get_permalink( get_option( 'page_for_posts' ) ) . '">'. get_the_title( (Int) get_option('page_for_posts') );
+        $html .=  '<li><a href="' . get_permalink( get_option( 'page_for_posts' ) ) . '">'. get_the_title( (Int) get_option('page_for_posts') ) . '</a>';
         if ( uw_is_custom_post_type() )
         {
           $posttype = get_post_type_object( get_post_type() );
