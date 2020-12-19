@@ -76,6 +76,7 @@ if ( ! function_exists('get_uw_breadcrumbs') ) :
 
       if ( is_category() )
       {
+        $html .=  '<li><a href="' . get_permalink( get_option( 'page_for_posts' ) ) . '">'. get_the_title( (Int) get_option('page_for_posts') ) . '</a>';
         $category = get_category( get_query_var( 'cat' ) );
         //$html .=  '<li class="current"><a href="'  . get_category_link( $category->term_id ) .'" title="'. get_cat_name( $category->term_id ).'">'. get_cat_name($category->term_id ) . '</a>';
         $html .=  '<li class="current"><span>'. get_cat_name($category->term_id ) . '</span>';
@@ -83,6 +84,7 @@ if ( ! function_exists('get_uw_breadcrumbs') ) :
 
       if ( is_tag() )
       {
+        $html .=  '<li><a href="' . get_permalink( get_option( 'page_for_posts' ) ) . '">'. get_the_title( (Int) get_option('page_for_posts') ) . '</a>';
         // better way to get tag?
         $tag = get_queried_object()->name;
         $html .=  '<li class="current"><span>'. $tag . '</span>';
