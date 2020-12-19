@@ -1,4 +1,5 @@
-<!-- This page is used to render the blog categories page (/categories) -->
+<!-- This page is used to render the blog categories page (/categories) 
+     and category results pages -->
 <?php if(function_exists('get_header')) { get_header(); } ?>
 
 
@@ -38,7 +39,11 @@
 
     </div>
 
-    <?php get_sidebar() ?>
+		<div class="col-md-4 uw-sidebar uw-blog-sidebar">
+			<?php dynamic_sidebar( 'uw_child_blog_sidebar' ); ?>
+		</div>
+
+    <?php //get_sidebar() ?>
 
   </div>
 

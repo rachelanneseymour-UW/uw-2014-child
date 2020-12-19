@@ -1,3 +1,6 @@
+<!-- used to show tag results -->
+<!-- considered making an archive.php but instead of separate tag & category pages but was worried
+     it might override other pages too -->
 <?php get_header(); ?>
 
 <?php get_template_part( 'header', 'image' ); ?>
