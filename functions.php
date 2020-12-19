@@ -16,6 +16,19 @@ function uw_2014_child_widgets_init() {
 }
 add_action( 'widgets_init', 'uw_2014_child_widgets_init' );
 
+// The UW select messes up the order of the categories in the select input
+// and basically causes it to not function. Easiest way to fix this is just
+// revent the UW select from being applied
+
+// We can't grab the instance of the UW_Filters object to properly
+// call remove_filter() so instead we just register another filter after theirs
+// that undoes what they do
+add_filter( 'widget_categories_dropdown_args', function( $args )
+{
+    $args['class' ] = '';
+    return $args;
+}, 11 );
+
 // a copy of uw_breadcrumbs that omits the category link and links back to the posts page from a single post 
 // (why doesn't the original have an option for this?) 
 

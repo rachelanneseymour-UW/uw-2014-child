@@ -42,7 +42,7 @@
 
     </div>
 
-		<div class="col-md-4 uw-sidebar">
+		<div class="col-md-4 uw-sidebar uw-blog-sidebar">
 			<?php dynamic_sidebar( 'uw_child_blog_sidebar' ); ?>
 		</div>
     <?php // get_sidebar() ?>

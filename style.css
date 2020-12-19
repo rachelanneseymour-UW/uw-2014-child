@@ -251,3 +251,9 @@
 .uw-breadcrumbs a, .uw-breadcrumbs span {
   white-space: normal;
 }
+
+/******************************* Style 'categories' widget for blog sidebar ****************/
+/* not sure if this is right to hide the screen reader text but it's duplicated text... */
+.uw-blog-sidebar .screen-reader-text {
+  display: none;
+}
