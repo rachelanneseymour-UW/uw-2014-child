@@ -39,7 +39,7 @@
             <span class="next-page"><?php next_posts_link( 'Next page', '' ); ?></span>
 
       </div>
-
+			<?php the_tags(); ?>
     </div>
 
 		<div class="col-md-4 uw-sidebar uw-blog-sidebar">
