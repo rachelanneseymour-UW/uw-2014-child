@@ -12,6 +12,11 @@
  Text Domain:  uw-2014-child
 */
 
+/*
+ Based on uw-2014 theme version 2.2.6: https://github.com/uweb/uw-2014 
+ Specifically this commit: https://github.com/uweb/uw-2014/commit/e36398c9efeb256b1fbb8b9334d14bf1a386dee5
+*/
+
 /* Prevent headers from being all caps */
 #uw-container .hero-height2 h1, #uw-container #hero-container .uw-site-title {
   text-transform: none;
