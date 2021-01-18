@@ -15,6 +15,10 @@
 /*
  Based on uw-2014 theme version 2.2.6: https://github.com/uweb/uw-2014 
  Specifically this commit: https://github.com/uweb/uw-2014/commit/e36398c9efeb256b1fbb8b9334d14bf1a386dee5
+
+ One thing to note is I had to make a fix in `getBaseUrl()` (uw.init.js) of parent theme so that `site` was
+ included in the URL even if it isn't hosted on 'www.washington.edu' or 'depts.washington.edu'. This shouldn't
+ be an issue when hosted on one of those two subdomains.
 */
 
 /* Prevent headers from being all caps */
