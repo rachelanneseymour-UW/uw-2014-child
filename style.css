@@ -266,3 +266,11 @@
 .uw-blog-sidebar .screen-reader-text {
   display: none;
 }
+
+/************************** Fix slashes in hero image on narrow windows *******************/
+/*  When window is between 768 and 991px, the bg image needs to be extended */
+@media (min-width: 768px) and (max-width: 991px) {
+  .uw-hero-image.hero-height #hero-container h1::after, .no-uw-hero-image.hero-height #hero-container h1::after {
+    height: 508px;
+  }
+}
