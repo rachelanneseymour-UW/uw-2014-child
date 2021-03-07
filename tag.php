@@ -3,15 +3,11 @@
      it might override other pages too -->
 <?php get_header(); ?>
 
-<?php get_template_part( 'header', 'image' ); ?>
-
 <div class="container uw-body">
 
   <div class="row">
 
     <div <?php uw_content_class(); ?> role='main'>
-
-      <?php uw_site_title(); ?>
 
       <?php get_template_part( 'menu', 'mobile' ); ?>
 
