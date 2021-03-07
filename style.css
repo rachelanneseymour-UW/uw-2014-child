@@ -43,6 +43,11 @@
   height: 60px;
 }
 
+/* fix for desktop menu being position too high */
+nav ul.uw-sidebar-menu {
+  margin-top: -50px;
+}
+
 /*********************** CSS for header *****************************************/
 .uw-thinstrip .hprc-wordmark {
   display: block;
