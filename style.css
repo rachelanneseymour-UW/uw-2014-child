@@ -48,6 +48,13 @@ nav ul.uw-sidebar-menu {
   margin-top: -50px;
 }
 
+/************** Fix to wrap title before it hits menu on mobile *****************/
+@media (max-width: 767px) {
+  .uw-hero-image.hero-blank .uw-site-title-blank {
+    padding-right: 68px;
+  }
+}
+
 /*********************** CSS for header *****************************************/
 .uw-thinstrip .hprc-wordmark {
   display: block;
