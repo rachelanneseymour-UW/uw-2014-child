@@ -2,12 +2,12 @@
 
   <div class="container">
     <a href="http://uw.edu" title="University of Washington Home" class="uw-patch">University of Washington</a>
-    <a href="/hprc/" class="hprc-wordmark" style="width: auto;">Health Promotion Research Center<br><span>University of Washington</span></a>
+    <a href="<?php echo esc_url( home_url( '/' )); ?>" class="hprc-wordmark" style="width: auto;">Health Promotion Research Center<br><span>University of Washington</span></a>
   </div>
   <div class='align-right'>
       <nav class="uw-thin-strip-nav" aria-label='audience menu'>
           <ul class="uw-thin-links">
-          <li><a href="https://depts.washington.edu/hserv/" title="Department of Health Services">Department of Health Services</a></li>  
+          <li><a href="https://depts.washington.edu/hserv/" title="Department of Health Services">Department of Health Services</a></li>
           <li><a href="https://sph.washington.edu/" title="School of Public Health">School of Public Health</a></li>
           </ul>
       </nav>
