@@ -80,7 +80,7 @@
 </div>
 
 <div class="tile-group">
-  <h2>News &amp; Updates</h2>
+  <h2><a href="<?php echo get_post_type_archive_link( 'post' ); ?>">News &amp; Updates</a></h2>
   <div class="container">
     <div class="tiles row">
 

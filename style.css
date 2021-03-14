@@ -55,6 +55,16 @@ nav ul.uw-sidebar-menu {
   }
 }
 
+
+/***************** Styling for tile group on homepage ***************************/
+.tile-group h2 a {
+  color: #4b2e83;
+}
+
+.tile-group h2 a:hover {
+  color: #85754d;
+}
+
 /*********************** CSS for header *****************************************/
 .uw-thinstrip .hprc-wordmark {
   display: block;
