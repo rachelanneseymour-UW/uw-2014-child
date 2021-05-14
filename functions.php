@@ -1,5 +1,14 @@
 <?php
 
+// add code to the header (like analytics)
+add_action('wp_head', 'inject_headers');
+function inject_headers(){
+    //Close PHP tags 
+    ?>
+    <!-- ADD YOUR PLAIN HTML CODE HERE -->
+    <?php //Open PHP tags
+}
+
 // add our JS script
 wp_enqueue_script( 'uw-2014-child', get_stylesheet_directory_uri() . '/js/uw-2014-child.js', array( 'jquery' ), 1.0, false);
 

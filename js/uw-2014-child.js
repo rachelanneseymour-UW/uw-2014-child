@@ -1,6 +1,7 @@
 jQuery(document).ready(function(){
-  // we're relying on running after UW.Radio is defined but before the parent theme's
-  // document ready handler. Given we register first I think this is a safe assumption
+  // we're relying on running after UW.elements is defined but before the parent theme's
+  // document ready handler. Given we register our document handler first I think this 
+  // is a safe assumption
   
   // UW scripts aren't loaded in admin so protect against them not being there
   // ideally we shouldn't load in admin either but this was easier to figure out
