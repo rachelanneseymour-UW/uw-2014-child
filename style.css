@@ -296,3 +296,25 @@ nav ul.uw-sidebar-menu {
     height: 508px;
   }
 }
+
+/**************************** Try to undo uw.checkbox-and-radio.less ***********************/
+#uw-container .checkbox input,
+#uw-container .radio input
+{
+  display: initial;
+  position: initial;
+  top: initial;
+  left: initial;
+  width: initial;
+  height: initial;
+  padding: initial;
+  margin: initial;
+  outline: initial !important;
+  opacity: initial !important;
+}
+
+#uw-container .checkbox,
+#uw-container .radio
+{
+  padding-left: initial;
+}

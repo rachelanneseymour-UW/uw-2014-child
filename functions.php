@@ -1,5 +1,8 @@
 <?php
 
+// add our JS script
+wp_enqueue_script( 'uw-2014-child', get_stylesheet_directory_uri() . '/js/uw-2014-child.js', array( 'jquery' ), 1.0, false);
+
 require_once(get_stylesheet_directory() . '/setup/class.hprc-page-attributes-meta-box.php' );
 
 // set up a sidebar that is used only for the blog pages
@@ -18,7 +21,7 @@ add_action( 'widgets_init', 'uw_2014_child_widgets_init' );
 
 // The UW select messes up the order of the categories in the select input
 // and basically causes it to not function. Easiest way to fix this is just
-// revent the UW select from being applied
+// prevent the UW select from being applied
 
 // We can't grab the instance of the UW_Filters object to properly
 // call remove_filter() so instead we just register another filter after theirs
