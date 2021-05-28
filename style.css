@@ -297,9 +297,18 @@ nav ul.uw-sidebar-menu {
   }
 }
 
+/***************************** Fix mobile menu close icon ********************************/
+@media only screen and (max-width : 992px) {
+	nav ul.uw-sidebar-menu {
+		margin-top: 50px;
+	}
+}
+
 /**************************** Try to undo uw.checkbox-and-radio.less ***********************/
 #uw-container .checkbox input,
-#uw-container .radio input
+#uw-container .radio input,
+body .checkbox input,
+body .radio input
 {
   display: initial;
   position: initial;
@@ -315,6 +324,13 @@ nav ul.uw-sidebar-menu {
 
 #uw-container .checkbox,
 #uw-container .radio
+body .checkbox,
+body .radio
 {
   padding-left: initial;
+}
+
+.uw-search-bar-container div.labels input
+{
+  margin-top: 4px !important;
 }
