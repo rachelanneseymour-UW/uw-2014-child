@@ -7,8 +7,6 @@
   <div class='align-right'>
       <nav class="uw-thin-strip-nav" aria-label='audience menu'>
           <ul class="uw-thin-links">
-          <li><a href="https://depts.washington.edu/hserv/" title="Department of Health Services">Department of Health Services</a></li>
-          <li><a href="https://sph.washington.edu/" title="School of Public Health">School of Public Health</a></li>
           </ul>
       </nav>
       <nav id='search-quicklinks' aria-label='search and quick links'>

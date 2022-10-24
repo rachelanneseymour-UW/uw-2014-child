@@ -2,7 +2,7 @@
 
 <nav aria-label="footer navigation">
     <ul class="footer-links">
-        <li><a href="https://depts.washington.edu/hserv/">Department of Health Services</a></li>
+        <li><a href="https://depts.washington.edu/hspop/">Department of Health Systems and Population Health</a></li>
         <li><a href="https://sph.washington.edu/">School of Public Health</a></li>
     </ul>
 </nav>
